@@ -1,0 +1,18 @@
+<div class="clothes"
+     infinite-scroll
+     [infiniteScrollDistance]="scrollDistance"
+     [infiniteScrollUpDistance]="scrollUpDistance"
+     [infiniteScrollThrottle]="throttle"
+     (scrolled)="onScrollDown()">
+  <div class="coat" *ngFor="let item of array">
+
+    <div class="product-item">
+      <img src="{{item.img}}" alt="{{item.coatId}}" class={{item.coatId}} (click)="info(item.coatId)">
+      <div class="product-list">
+        <h3>{{item.description}}</h3>
+        <span class="price">₽ {{item.price}}</span>
+        <a href="#" class="button">В корзину</a>
+      </div>
+    </div>
+  </div>
+</div>

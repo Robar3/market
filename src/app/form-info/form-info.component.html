@@ -1,0 +1,56 @@
+<!--<form [formGroup]="infoForm" class="formInfo">-->
+<!--  <div class="field">-->
+<!--    <label for="name">Name</label>-->
+<!--    <input id="name" type="text" formControlName="name" />-->
+<!--  </div>-->
+
+<!--  <div class="field">-->
+<!--    <label for="surname">Surname</label>-->
+<!--    <input id="surname" type="text" formControlName="surname" />-->
+<!--  </div>-->
+<!--  <div class="field">-->
+<!--    <label for="phone">Phone</label>-->
+<!--    <input id="phone" type="text" formControlName="phone" />-->
+<!--  </div>-->
+<!--  <div class="field">-->
+<!--    <label for="email">Email</label>-->
+<!--    <input id="email" type="email" formControlName="email" />-->
+<!--  </div>-->
+
+<!--  <div class="field">-->
+<!--    <button type="button" (click)="onSubmit()">Submit</button>-->
+<!--  </div>-->
+<!--</form>-->
+
+<form class="decor formInfo" [formGroup]="infoForm">
+  <div class="form-left-decoration"></div>
+  <div class="form-right-decoration"></div>
+  <div class="circle"></div>
+  <div class="form-inner">
+    <h3>Написать нам</h3>
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" type="text" formControlName="name" />
+    </div>
+
+    <div class="field">
+      <label for="surname">Surname</label>
+      <input id="surname" type="text" formControlName="surname" />
+    </div>
+    <div class="field">
+      <label for="phone">Phone</label>
+      <input id="phone" type="text" formControlName="phone" />
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" />
+    </div>
+
+    <div class="field">
+      <button type="button" (click)="onSubmit()">Submit</button>
+    </div>
+    <div class="field">
+      <button type="button" (click)="exit()">Cancel</button>
+    </div>
+  </div>
+</form>
